@@ -1,0 +1,24 @@
+.messagestyle{
+  padding:15px;
+  color:crimson !important;
+  font-weight: 500 !important;
+  border:1px solid gray;
+  width:30%;
+  border-radius:25px 0 25px 0;
+  margin: 20px auto;
+
+}
+.inputfield{
+  width: 100%;
+  outline-width:0;
+  border: 1px solid crimson;
+  border-radius: 10px;
+  height: 50px;
+  padding: 5px 10px;
+}
+.btn{
+  max-width: 50%;
+  width: 200px;
+  margin:0 25%;
+}
+

@@ -1,0 +1,25 @@
+<div class="container my-4 p-3">
+  <button class= "btn btn-danger d-grid gap-2 col-6 mx-auto"(click)="toggleState()">{{showData ? 'Hide Data':'View Data'}}</button>
+  <div *ngIf="showData; else showmesg">
+
+
+  <table class="table table-hover table-bordered my-4">
+    <thead class="thead">
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let test of testData">
+        <td>{{test.id}}</td>
+        <td>{{test.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  </div>
+  <ng-template #showmesg> <h1 class="text-danger text-center my-4">Click the Button to View Data </h1></ng-template>
+  </div>

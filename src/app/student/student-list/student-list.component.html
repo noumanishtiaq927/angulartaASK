@@ -1,0 +1,26 @@
+<br />
+<h3 class="text-center">Individual filter</h3>
+<app-filter (dateofFilter)="newfilterdate($event)"></app-filter>
+<br />
+<br />
+<div class="container">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>joinDate</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let student of studentDetail">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.joinDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

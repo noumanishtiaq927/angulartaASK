@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Parent-Child-Communication</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/teacher">Teacher Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/student">Student Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/httpdemo">Http demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/globalfilter">Global Filter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/adddata">Add Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/alldata">All Data</a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- <app-filter (dateofFilter)="newfilterdate($event)"></app-filter> -->
+<router-outlet></router-outlet>

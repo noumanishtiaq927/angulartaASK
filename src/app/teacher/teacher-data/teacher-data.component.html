@@ -1,0 +1,24 @@
+<br />
+<h3>Teacher Data</h3>
+<br />
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>joinDate</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let teacher of teacherDetail">
+        <td>{{ teacher.id }}</td>
+        <td>{{ teacher.name }}</td>
+        <td>{{ teacher.age }}</td>
+        <td>{{ teacher.joinDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,10 @@
+<div class="messagestylee">
+  <h3 class="text-center text-decoration-underline">Parent component</h3>
+<p class="text-center text-info">Message from Child To Parent  " {{message | titlecase}} "</p>
+<input class="inputfield" name="firsttext" [(ngModel)]="firsttext" type="text">
+<br/>
+<br/>
+<button class="btn btn-secondary" (click)="submitData()">Click</button>
+
+</div>
+<app-child   [parentData]="name" (childEvent)="message=$event"></app-child>

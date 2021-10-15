@@ -1,0 +1,15 @@
+<div class="input-group datefield">
+  <span class="input-group-text spancls"> Filter By Date</span>
+  <input
+    type="date"
+    name="datefilter"
+    [(ngModel)]="datefilter"
+    (change)="showDate()"
+  />
+</div>
+<div class="input-group datefield">
+  <span class="input-group-text spancls"> Filter By Name</span>
+  <input type="text" name="search" [(ngModel)]="search" />
+</div>
+<app-student-data></app-student-data>
+<app-teacher-data></app-teacher-data>

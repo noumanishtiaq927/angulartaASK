@@ -1,0 +1,25 @@
+
+
+<br/>
+<br/>
+<div class="container">
+<table class="table table-light table-hover">
+  <thead>
+    <tr>
+      <td> <b>createdTime</b></td>
+      <td> <b>Id</b> </td>
+      <td> <b>UserName</b> </td>
+      <td> <b>Status</b> </td>
+    </tr>
+  </thead>
+
+<tbody>
+<tr *ngFor="let gd of getData">
+  <td>{{gd.createdTime | date }} </td>
+   <td> {{gd.id}} </td>
+   <td>{{gd.fields.UserName | json}}</td>
+    <td>{{gd.fields.Status}}</td>
+</tr>
+</tbody>
+</table>
+</div>

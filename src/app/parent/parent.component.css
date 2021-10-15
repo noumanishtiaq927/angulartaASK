@@ -1,0 +1,23 @@
+.messagestylee{
+  padding:12px;
+  font-size: large;
+  font-weight: 500;
+  border: 2px solid salmon;
+  width:50%;
+
+  margin: 20px auto;
+
+}
+.inputfield{
+  width: 100%;
+  outline-width:0;
+  border: 1px solid crimson;
+  border-radius: 10px;
+  height: 50px;
+  padding: 5px 10px;
+}
+.btn{
+  max-width: 45%;
+  width: 200px;
+  margin:0 39%;
+}
